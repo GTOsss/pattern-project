@@ -1,0 +1,31 @@
+@import '../../style/main';
+
+.navbar {
+  list-style: none;
+  padding: 0 1.5rem 0 1.5rem;
+  font-size: 14px;
+  display: flex;
+  margin: 0;
+  border-bottom: 1px solid #b5b5b5;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.navItem {
+  height: 2rem;
+  display: block;
+  text-decoration: none;
+  padding: 0 1rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 16px;
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+  margin-left: -1px;
+  color: black;
+}
+
+.navItemActive {
+  composes: navItem;
+  background-color: #d3d3d3;
+}

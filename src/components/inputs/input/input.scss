@@ -1,0 +1,53 @@
+@import '../../../style/main';
+
+.input {
+  composes: defaultInput;
+  padding-right: 16px;
+}
+
+.inputError {
+  composes: defaultInputError;
+}
+
+.errorMsg {
+  composes: defaultErrorMsg;
+}
+
+.errorMsgHidden {
+  composes: errorMsg;
+  overflow-y: hidden;
+  height: 0;
+}
+
+.wrapInput {
+  position: relative;
+  flex-basis: 70%;
+}
+
+.left {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.right {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.both {
+  border-radius: 0;
+}
+
+.clearBtn {
+  font-size: 11px;
+  color: #a59999;
+  cursor: pointer;
+  position: absolute;
+  right: 3px;
+  top: 5px;
+  z-index: 10;
+}
+
+.clearBtn:hover {
+  color: #D2021B;
+}

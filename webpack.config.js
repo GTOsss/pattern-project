@@ -57,6 +57,10 @@ module.exports = {
           name: '[path][name].[ext]',
         },
       },
+      {
+        test: /\.json$/,
+        loader: 'json-loader',
+      },
     ],
   },
   plugins: [
@@ -64,4 +68,12 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     require('autoprefixer'),
   ],
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src/components/'),
+      containers: path.resolve(__dirname, 'src/containers/'),
+      actions: path.resolve(__dirname, 'src/store/actions/'),
+      constants: path.resolve(__dirname, 'src/store/constants/'),
+    },
+  },
 };

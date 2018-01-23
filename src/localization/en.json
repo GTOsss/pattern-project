@@ -1,0 +1,7 @@
+{
+  "default": {
+    "language": "Language",
+    "login": "Login",
+    "registration": "Registration"
+  }
+}

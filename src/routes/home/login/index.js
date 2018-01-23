@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import LoginForm from 'containers/registration/login';
 
-class Profile extends Component {
+class Login extends Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
     return (
       <div>
-        profile
+        <LoginForm />
       </div>
     );
   }
 }
 
-Profile.propTypes = {
+Login.propTypes = {
 
 };
 
-Profile.defaultProps = {
+Login.defaultProps = {
 
 };
 
-export default Profile;
+export default Login;

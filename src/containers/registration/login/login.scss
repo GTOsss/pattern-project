@@ -1,0 +1,10 @@
+@import '../../../style/main';
+
+.form {
+  composes: defaultForm;
+}
+
+.buttonLogin {
+  composes: defaultButtonMargin;
+  min-width: 10rem;
+}

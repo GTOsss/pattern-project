@@ -1,0 +1,9 @@
+@import '../../../style/main';
+
+.form {
+  composes: defaultForm;
+}
+
+.button {
+  composes: defaultButtonMargin;
+}
